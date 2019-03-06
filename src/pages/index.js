@@ -1,20 +1,16 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
-
+import image from "../images/personal-site.svg"
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+    <SEO title="Home" keywords={[`daniel`, `mata`, `site`]} />
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+      <img src={image} alt="in-construction" />
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <h1>Hello there</h1>
+    <p>if you are seeing this page, it means the owner of this page is probably procastinating</p>
+    <p>Hopefully doing something productive, if you want to reach him, you can <a href={"https://twitter.com/danielmata__"}> tweet</a> or <a href="mailto:damata1592@example.com">send him an email</a></p>
   </Layout>
 )
 
